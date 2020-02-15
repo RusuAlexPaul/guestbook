@@ -1,24 +1,50 @@
+<%= stylesheet_link_tag "posts" %>
 <p id="notice"> <%= notice %></p>
 
-<p>
-  <strong>Name: </strong>
-  <%= @post.name %>
-</p>
-
-<p>
-  <strong>Email: </strong>
-  <%= @post.email %>
-</p>
-
-<p>
-  <strong>Url: </strong>
-  <%= @post.url %>
-</p>
-
-<p>
-  <strong>Body: </strong>
-  <%= @post.body %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> 
-<%= link_to 'Back', posts_path %>
+<section class="fdb-block py-0">
+  <div class="container py-5 my-5">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-7 col-xl-5 text-left">
+        <div class="row">
+          <div class="col">
+            <h1>Your post is live! </h1>
+            <h4 class="lead">Thank you for your post!</h4>
+            <br>
+            <h4 class="lead">Feel free to change something if you change your mind or you can go to Homepage and see your post there. </h4>
+          </div>
+        </div>
+        <div class="fdb-box fdb-touch-show">  
+          <div class="row">
+            <div class="col mt-4">
+              <strong>Name: </strong>
+              <%= @post.name %>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <strong>Email: </strong>
+              <%= @post.email %>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <strong>Url: </strong>
+              <%= @post.url %>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <strong>Body: </strong>
+              <%= @post.body %>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <%= link_to 'Edit', edit_post_path(@post), :class => 'btn btn-outline-dark mr-2' %>
+          <br>
+          <%= link_to 'Back', posts_path, :class => 'btn btn-outline-dark' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

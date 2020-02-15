@@ -1,6 +1,7 @@
 <%= form_with(model: post, local: true) do |form| %>
+<%= stylesheet_link_tag "posts" %>
 
-<section class="fdb-block">
+<section class="fdb-block-form">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-7 col-md-5 text-center">
@@ -27,7 +28,7 @@
           </div>
           <div class="row mt-4 actions">
             <div class= "col">
-              <%= form.submit :class => 'btn btn-outline-dark' %>
+              <%= form.submit :class => 'btn btn-outline-primary-create-new-post' %>
             </div>
           </div>
         </div>

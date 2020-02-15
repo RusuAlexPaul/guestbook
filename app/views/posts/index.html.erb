@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "posts" %>
 <p id="notice"><%= notice %></p>
 
 <section class="fdb-block">
@@ -5,14 +6,20 @@
     <div class="row justify-content-center">
       <div class="col col-md-12">
         <h1>Posts</h1>
+        <br>
+        <h3 class="lead">A simple guestbook website!</h3>
+        <br>
+        <h4>Feel free to add your post here.</h4>
+      </div>
+      <div class="col col-md-12">
+        <%= link_to 'New post', new_post_path, :class => 'btn btn-outline-primary-new-post', :type => 'button' %>
       </div>
     </div>
   </div>
 </section>
 
-<%= link_to 'New post', new_post_path, :class => 'btn btn-outline-primary', :type => 'button' %>
 
-<section class="fdb-block">
+<section class="fdb-block-posts">
   <div class="container pt-sm">
     <table class="table">
       <thead class="thead-dark">
@@ -31,8 +38,8 @@
             <td><%= post.email %></td>
             <td><%= post.url %></td>
             <td><%= post.body %></td>
-            <td><%= link_to 'Show', post, :class => 'btn btn-outline-dark', :type => 'button' %></td>
-            <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-outline-dark', :type => 'button' %></td>
+            <td><%= link_to 'Show', post, :class => 'btn btn-outline-dark-show', :type => 'button' %></td>
+            <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-outline-dark-show', :type => 'button' %></td>
             <td><%= link_to 'Destroy', post, :class => 'btn btn-outline-danger', :type => 'button', method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
@@ -41,11 +48,11 @@
   </div>
 </section>
 
-<section class="fdb-block bg-dark">
+<section class="fdb-block-footer">
   <div class="container">
     <div class="row text-center">
       <div class="col-12">
-        <h3>Made with <i class="fas fa-heart text-danger"></i> by Froala</h1>
+        <h3>Made with <i class="fas fa-heart text-danger"></i> by <a class="alex-rusu" href="https://alex.dutylabs.ro"> Alex Rusu</a></h1>
       </div>
     </div>
   </div>
