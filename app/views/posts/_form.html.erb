@@ -5,63 +5,34 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-7 col-md-5 text-center">
         <div class="fdb-box fdb-touch">
-          <div class="row">
-            <div class="col mt-4">
-              <input type="text" class="form-control" placeholder="Name">
+          <div class="row mt-4 field">
+            <div class= "col">
+              <%= form.text_field :name, :class => 'form-control', :type => 'text', :placeholder => 'Name' %>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Email">
+          <div class="row mt-4 field">
+            <div class= "col">
+              <%= form.text_field :email, :class => 'form-control', :type => 'text', :placeholder => 'Email' %>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Url">
+          <div class="row mt-4 field">
+            <div class= "col">
+              <%= form.text_field :url, :class => 'form-control', :type => 'text', :placeholder => 'URL' %>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col">
-              <input type="text" class="form-control mb-1" placeholder="Your Message">
+          <div class="row mt-4 field">
+            <div class= "col">
+              <%= form.text_field :body, :class => 'form-control', :type => 'text', :placeholder => 'Your Message' %>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col">
-              <div class="actions btn btn-secondary">
-                <%= form.submit %>
-              </div>
+          <div class="row mt-4 actions">
+            <div class= "col">
+              <%= form.submit :class => 'btn btn-outline-dark' %>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>    
-    <div class= "field">
-        <%= form.label :name %>
-        <%= form.text_field :name %>
-    </div>
-
-    <div class= "field">
-        <%= form.label :email %>
-        <%= form.text_field :email %>
-    </div>
-
-    <div class= "field">
-        <%= form.label :url %>
-        <%= form.text_field :url %>
-    </div>
-
-    <div class= "field">
-        <%= form.label :body %>
-        <%= form.text_area :body %>
-    </div>
-
-    <div class="actions">
-        <%= form.submit %>
-    </div>
-
-    
-
-
+</section>
 <% end %>
