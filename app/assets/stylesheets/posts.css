@@ -38,12 +38,13 @@ body {
 }
 .fdb-touch-show{
     background: transparent;
-    padding: 1.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     overflow: hidden;
-    color: #444;
+    color: rgb(255, 255, 255)226, 209, 209);
     border-radius: .25rem;
-    box-shadow: 0 .3125rem .875rem 0 rgba(129,129,129,.2)!important;
-
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
 }
 .fdb-block {
     color: white;
@@ -72,6 +73,34 @@ body {
     position: relative;
     background-size: cover;
     background-color: transparent;
+}
+.btn-outline-dark-back{
+    color: #276174 !important;
+    background-color: #63FD88;
+    border-color: #63FD88;
+    background-image: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-outline-dark-back:hover{
+    color: white !important;
+    background-color: transparent;
+    border-color: #63FD88;
+    background-image: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-outline-dark-edit-2{
+    color: #276174 !important;
+    background-color: #63FD88;
+    border-color: #63FD88;
+    background-image: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-outline-dark-edit-2:hover {
+    color: white !important;
+    background-color: transparent;
+    border-color: #63FD88;
+    background-image: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn-outline-primary-new-post{
     color: #276174 !important;
