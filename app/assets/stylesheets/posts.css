@@ -1,6 +1,8 @@
 body {
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(39,97,116) 0%, rgba(51,197,88) 50%, rgba(99,253,136) 100%);
+    /*
+    background: linear-gradient(90deg, rgba(39,97,116) 0%, rgba(51,197,88) 50%, rgba(99,253,136) 100%);//
+    */
 }
 .table .thead-dark th {
     color: #fff;
