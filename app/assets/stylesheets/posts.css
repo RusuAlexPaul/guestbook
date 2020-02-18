@@ -1,8 +1,5 @@
 body {
-    background: rgb(131,58,180);
-    /*
-    background: linear-gradient(90deg, rgba(39,97,116) 0%, rgba(51,197,88) 50%, rgba(99,253,136) 100%);//
-    */
+    background-color: #000;
 }
 .table .thead-dark th {
     color: #fff;
@@ -49,7 +46,7 @@ body {
     border-style: solid;
 }
 .fdb-block {
-    color: white;
+    color: #0000 !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
