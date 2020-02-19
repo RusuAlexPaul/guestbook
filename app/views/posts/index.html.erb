@@ -37,8 +37,6 @@
             <td><%= post.email %></td>
             <td><%= post.url %></td>
             <td><%= post.body %></td>
-            <td><%= link_to 'Show', post, :class => 'btn btn-outline-dark-show', :type => 'button' %></td>
-            <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-outline-dark-show', :type => 'button' %></td>
             <td><%= link_to 'Destroy', post, :class => 'btn btn-outline-danger', :type => 'button', method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>

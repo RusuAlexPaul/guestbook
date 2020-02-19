@@ -129,7 +129,7 @@ body {
     background-image: none;
 }
 .btn-outline-primary-create-new-post:hover{
-    background-color: rgb(139, 139, 139);
+    background-color: black;
     color: white;
     background-image: none;
     border-color: rgb(139, 139, 139) !important;
